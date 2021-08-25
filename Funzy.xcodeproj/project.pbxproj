@@ -44,6 +44,9 @@
 		0475279626D4D9EC00FD4A11 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0475278326D4D9EC00FD4A11 /* Montserrat-Italic.ttf */; };
 		0475279726D4D9EC00FD4A11 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0475278426D4D9EC00FD4A11 /* Montserrat-SemiBoldItalic.ttf */; };
 		0475279826D4D9EC00FD4A11 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0475278526D4D9EC00FD4A11 /* Montserrat-ExtraBoldItalic.ttf */; };
+		0475279A26D4EBAD00FD4A11 /* VerticalSignUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0475279926D4EBAD00FD4A11 /* VerticalSignUp.xib */; };
+		04D6400826D4FB21000E4A42 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6400726D4FA6B000E4A42 /* CustomButton.swift */; };
+		04D6400C26D50380000E4A42 /* ViewUntils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D6400B26D50380000E4A42 /* ViewUntils.swift */; };
 		04D8E64B26D39F760014A142 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8E64926D39F760014A142 /* CountriesViewController.swift */; };
 		04D8E64C26D39F760014A142 /* CountriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D8E64A26D39F760014A142 /* CountriesViewController.xib */; };
 /* End PBXBuildFile section */
@@ -69,8 +72,6 @@
 		0475275726D49F9300FD4A11 /* CodeInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeInputView.swift; sourceTree = "<group>"; };
 		0475275926D49F9300FD4A11 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0475275B26D49F9300FD4A11 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
-		0475275D26D49F9300FD4A11 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
-		0475275E26D49F9300FD4A11 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		0475276126D4A02600FD4A11 /* EnterPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPasswordViewController.swift; sourceTree = "<group>"; };
 		0475276226D4A02600FD4A11 /* EnterPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnterPasswordViewController.xib; sourceTree = "<group>"; };
 		0475276626D4A5A100FD4A11 /* VerticalEnterPassWord.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalEnterPassWord.xib; sourceTree = "<group>"; };
@@ -96,6 +97,9 @@
 		0475278326D4D9EC00FD4A11 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		0475278426D4D9EC00FD4A11 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		0475278526D4D9EC00FD4A11 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0475279926D4EBAD00FD4A11 /* VerticalSignUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerticalSignUp.xib; sourceTree = "<group>"; };
+		04D6400726D4FA6B000E4A42 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = ../../../../Downloads/CustomButton.swift; sourceTree = "<group>"; };
+		04D6400B26D50380000E4A42 /* ViewUntils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUntils.swift; sourceTree = "<group>"; };
 		04D8E64926D39F760014A142 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
 		04D8E64A26D39F760014A142 /* CountriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,11 +118,12 @@
 		045EF60826D35426004AA177 = {
 			isa = PBXGroup;
 			children = (
-				045EF63826D3755B004AA177 /* App */,
-				0475274726D49D5A00FD4A11 /* Utility */,
-				0475275126D49F9300FD4A11 /* Views */,
+				045EF62226D35429004AA177 /* Info.plist */,
 				045EF63C26D3760F004AA177 /* Model */,
+				0475275126D49F9300FD4A11 /* CustomViews */,
+				0475274726D49D5A00FD4A11 /* Utility */,
 				045EF61326D35426004AA177 /* Present */,
+				045EF63826D3755B004AA177 /* App */,
 				045EF61226D35426004AA177 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,7 +142,6 @@
 				0475276A26D4B12400FD4A11 /* ChangePassword */,
 				0475274F26D49F4600FD4A11 /* EnterPassword */,
 				0475272E26D49C6500FD4A11 /* SignUp */,
-				045EF62226D35429004AA177 /* Info.plist */,
 			);
 			path = Present;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 			children = (
 				045EF62E26D37319004AA177 /* ContriesView */,
 				045EF62926D354D7004AA177 /* SignUpViewController.xib */,
+				0475279926D4EBAD00FD4A11 /* VerticalSignUp.xib */,
 				045EF62826D354D7004AA177 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
@@ -205,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				0475274926D49D9100FD4A11 /* ColorUtils.swift */,
+				04D6400B26D50380000E4A42 /* ViewUntils.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -219,7 +225,7 @@
 			path = EnterPassword;
 			sourceTree = "<group>";
 		};
-		0475275126D49F9300FD4A11 /* Views */ = {
+		0475275126D49F9300FD4A11 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				0475275826D49F9300FD4A11 /* LoadingView */,
@@ -228,7 +234,7 @@
 				0475275426D49F9300FD4A11 /* PasscodeView */,
 				0475275C26D49F9300FD4A11 /* Buttton */,
 			);
-			path = Views;
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 		0475275226D49F9300FD4A11 /* CustomXibs */ = {
@@ -268,8 +274,7 @@
 		0475275C26D49F9300FD4A11 /* Buttton */ = {
 			isa = PBXGroup;
 			children = (
-				0475275E26D49F9300FD4A11 /* NextButton.swift */,
-				0475275D26D49F9300FD4A11 /* BackButton.swift */,
+				04D6400726D4FA6B000E4A42 /* CustomButton.swift */,
 			);
 			path = Buttton;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				0475277026D4C82300FD4A11 /* VerticalChangePassword.xib in Resources */,
 				0475279526D4D9EC00FD4A11 /* Montserrat-Regular.ttf in Resources */,
 				0475279826D4D9EC00FD4A11 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				0475279A26D4EBAD00FD4A11 /* VerticalSignUp.xib in Resources */,
 				0475279726D4D9EC00FD4A11 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				0475276726D4A5A100FD4A11 /* VerticalEnterPassWord.xib in Resources */,
 				045EF61E26D35429004AA177 /* Assets.xcassets in Resources */,
@@ -419,10 +425,12 @@
 			files = (
 				0475274A26D49D9100FD4A11 /* ColorUtils.swift in Sources */,
 				0475276D26D4B13C00FD4A11 /* ChangePasswordViewController.swift in Sources */,
+				04D6400826D4FB21000E4A42 /* CustomButton.swift in Sources */,
 				045EF62A26D354D7004AA177 /* SignUpViewController.swift in Sources */,
 				045EF61526D35426004AA177 /* AppDelegate.swift in Sources */,
 				045EF63E26D37628004AA177 /* Country.swift in Sources */,
 				04D8E64B26D39F760014A142 /* CountriesViewController.swift in Sources */,
+				04D6400C26D50380000E4A42 /* ViewUntils.swift in Sources */,
 				045EF63626D374A9004AA177 /* CountriesTableViewCell.swift in Sources */,
 				0475276326D4A02600FD4A11 /* EnterPasswordViewController.swift in Sources */,
 			);
@@ -573,7 +581,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BYGB2RR8R;
-				INFOPLIST_FILE = Funzy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,7 +601,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BYGB2RR8R;
-				INFOPLIST_FILE = Funzy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
